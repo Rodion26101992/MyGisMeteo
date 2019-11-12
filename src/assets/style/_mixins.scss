@@ -1,0 +1,11 @@
+@mixin  displayGrid (){
+  display: grid;
+}
+
+
+
+@mixin  media768_fs ($size){
+  @media (max-width: 768px) {
+    font-size: $size;
+  }
+}

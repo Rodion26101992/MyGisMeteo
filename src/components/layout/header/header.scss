@@ -1,0 +1,28 @@
+@import '../../../assets/style/mixins';
+@import '../../../assets/style/variable';
+
+.navContainer {
+  display: grid;
+  grid-template-columns: 15% 60% 25%;
+  padding: 20px 0;
+  align-self: center;
+  font-weight: 400;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  @include media768_fs(22px);
+
+  .logoLinkContainer {
+    justify-self: self-end;
+  }
+  a {
+    text-decoration: none;
+    color: $colorBlack;
+  }
+
+  span {
+    color: $colorBlueDefault;
+  }
+
+
+}

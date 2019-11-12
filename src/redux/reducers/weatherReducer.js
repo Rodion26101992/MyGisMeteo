@@ -1,5 +1,12 @@
 const initialState = {
-
+    Zp: {
+        sensation: '',
+        wind: '',
+        pressure: '',
+        humidity: '',
+        geomagnetic: '',
+        temperatureWater: '',
+    }
 };
 
 export default (state = initialState, action) => {

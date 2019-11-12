@@ -1,0 +1,20 @@
+@import '../../../../assets/style/mixins';
+@import '../../../../assets/style/variable';
+
+.linksContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-around;
+  line-height: 18px;
+  font-size: $size17;
+  @include media768_fs($size14);
+
+  a {
+    text-decoration: none;
+    color: $colorBlueDefault;
+  }
+
+  :hover {
+    color: red;
+  }
+}

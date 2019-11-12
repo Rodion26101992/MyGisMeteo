@@ -9,7 +9,7 @@ class LinksHeader extends Component {
 
     render() {
         return (
-            <div>
+            <div className='linksContainer'>
                 <Link to='#'>
                     Погода
                 </Link>

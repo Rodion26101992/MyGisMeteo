@@ -1,0 +1,32 @@
+@import '../../../../assets/style/mixins';
+@import '../../../../assets/style/variable';
+
+.wrapper {
+  display: grid;
+  justify-content: flex-start;
+  grid-template-columns: auto auto;
+
+  .faceBookContainer {
+    display: grid;
+    grid-template-rows: max-content auto;
+    justify-self: center;
+    line-height: 18px;
+    font-size: $size14;
+    @include media768_fs(11px);
+
+    a {
+      justify-self: center;
+      color: blue;
+      line-height: 18px;
+      font-size: $size17;
+      @include media768_fs($size14);
+    }
+  }
+
+  select {
+    font-size: $size17;
+    border: none;
+    background: none;
+    color: red;
+  }
+}
