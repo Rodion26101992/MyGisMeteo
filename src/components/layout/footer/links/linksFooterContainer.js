@@ -5,6 +5,8 @@ import {connect} from 'react-redux';
 import './linksFooter.scss';
 import {Link} from "react-router-dom";
 
+const links = ['Погода','Новости','Карты','Информеры','Приложение'];
+
 class LinksFooter extends Component {
 
     render() {

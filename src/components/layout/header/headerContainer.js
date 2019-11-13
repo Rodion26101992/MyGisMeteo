@@ -6,7 +6,7 @@ import './header.scss';
 
 import {Link} from "react-router-dom";
 
-import LinksHeader from './links/linksHeaderContainer';
+import {LinksHeader} from './links/linksHeaderContainer';
 import {FecaBooklink} from "./faceBook/faceBookContainer";
 
 class Header extends Component {

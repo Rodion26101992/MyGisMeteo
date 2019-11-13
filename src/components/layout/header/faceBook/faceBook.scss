@@ -20,6 +20,7 @@
       line-height: 18px;
       font-size: $size17;
       @include media768_fs($size14);
+     @include hoverRed;
     }
   }
 
@@ -27,6 +28,9 @@
     font-size: $size17;
     border: none;
     background: none;
-    color: red;
+    color: $colorBlueDefault;
+    padding-left: 5px;
+    @include hoverRed;
   }
+
 }

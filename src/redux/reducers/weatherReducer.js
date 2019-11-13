@@ -1,18 +1,21 @@
 const initialState = {
-    Zp: {
-        sensation: '',
-        wind: '',
-        pressure: '',
-        humidity: '',
-        geomagnetic: '',
-        temperatureWater: '',
+    city: {
+        isLoaded: false,
+        data: [],
     }
 };
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case '': {
-            return {}
+        case 'GET_CITY_WEATHER': {
+
+            return {
+                ...state,
+                city: {
+                    isLoaded: true,
+                    data: action.data
+                }
+            }
         }
         default:
             return state

@@ -1,0 +1,38 @@
+.weatherCurrent {
+
+  background: url("../../../../../assets/images/weather_bg.jpg") no-repeat;
+  background-size: cover;
+  color: gray;
+  height: max-content;
+
+
+  .infoWeather {
+    display: grid;
+    grid-template-rows: auto;
+    margin: 0.8em;
+    border-radius: 10px;
+    background: white;
+
+    .headerWeather {
+      display: grid;
+      border: blueviolet 2px solid;
+    }
+
+    .detailedInfo {
+      display: grid;
+      grid-template-columns: 45% 55%;
+
+      .details {
+        display: grid;
+      }
+
+    }
+
+
+    .daysWeather {
+      display: grid;
+      opacity: .5;
+      border: aqua 2px solid;
+    }
+  }
+}

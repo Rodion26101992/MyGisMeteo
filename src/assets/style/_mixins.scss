@@ -9,3 +9,9 @@
     font-size: $size;
   }
 }
+
+@mixin hoverRed{
+  &:hover {
+    color: red;
+  }
+}

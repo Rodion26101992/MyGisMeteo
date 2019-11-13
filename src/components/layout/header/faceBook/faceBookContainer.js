@@ -4,7 +4,6 @@ import {Link} from "react-router-dom";
 import "./faceBook.scss";
 
 export function FecaBooklink() {
-
     return (
         <div className='wrapper'>
             <div className="faceBookContainer">

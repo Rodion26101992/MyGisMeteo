@@ -1,42 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-import {connect} from 'react-redux';
 
 import './linksHeader.scss';
 import {Link} from "react-router-dom";
 
-class LinksHeader extends Component {
+const links = ['Погода', 'Новости', 'Карты', 'Информеры', 'Приложение'];
 
-    render() {
-        return (
-            <div className='linksContainer'>
-                <Link to='#'>
-                    Погода
-                </Link>
-                <Link to='#'>
-                    Новости
-                </Link>
-                <Link to='#'>
-                    Карты
-                </Link>
-                <Link to='#'>
-                    Информеры
-                </Link>
-                <Link to='#'>
-                    Приложение
-                </Link>
-            </div>
-        )
-    }
-
+export function LinksHeader() {
+    return (<div className='linksContainer'>
+        {links.map((link) => <Link to='#'>{link}</Link>)}
+    </div>)
 }
-
-const mapStateToProps = state => {
-    return {}
-};
-
-const mapDispatchToProps = dispatch => {
-
-};
-
-export default LinksHeader = connect(mapStateToProps, mapDispatchToProps)(LinksHeader);
