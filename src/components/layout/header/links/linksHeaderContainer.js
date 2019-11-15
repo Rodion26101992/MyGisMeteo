@@ -8,6 +8,6 @@ const links = ['Погода', 'Новости', 'Карты', 'Информер
 
 export function LinksHeader() {
     return (<div className='linksContainer'>
-        {links.map((link) => <Link to='#'>{link}</Link>)}
+        {links.map((link) => <Link to='#' key={link}>{link}</Link>)}
     </div>)
 }

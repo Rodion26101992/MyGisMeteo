@@ -1,38 +1,119 @@
+@import '../../../../../assets/style/mixins';
+@import '../../../../../assets/style/variable';
+
+
 .weatherCurrent {
 
   background: url("../../../../../assets/images/weather_bg.jpg") no-repeat;
   background-size: cover;
   color: gray;
   height: max-content;
-
+  padding: 0.8em;
 
   .infoWeather {
     display: grid;
     grid-template-rows: auto;
-    margin: 0.8em;
-    border-radius: 10px;
+    border-radius: 30px;
     background: white;
+
 
     .headerWeather {
       display: grid;
-      border: blueviolet 2px solid;
+      grid-template-columns: auto auto;
+      padding: 1em;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: $colorBlueDefault;
+        font-size: 22px;
+        padding-left: 0.2em;
+      }
+
+      img {
+        height: 20px;
+        transform: rotate(0.5turn);
+      }
     }
 
     .detailedInfo {
       display: grid;
       grid-template-columns: 45% 55%;
 
+
       .details {
         display: grid;
+        padding: 0 1em 1em 1em;
+
+        .dateNow {
+          font-size: 19px;
+          font-weight: 600;
+          color: $colorBlack;
+        }
+
+        .temperatureDetails {
+          display: grid;
+          grid-template-columns: auto auto;
+          width: max-content;
+          padding-top: .5em;
+
+          .temperature {
+            font-size: 44px;
+            font-weight: 400;
+            color: $colorBlack;
+            padding: .3em;
+            width: max-content;
+            background: rgba(134, 215, 12, 0.25);
+          }
+
+          .vieWeather {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding-left: .8em;
+
+            img {
+              height: 75px;
+            }
+          }
+        }
+
+        .itemDetails {
+          display: grid;
+          grid-template-columns: auto auto;
+          justify-content: space-between;
+          padding: .4em 0;
+
+          h3 {
+            margin: 0;
+          }
+
+          > :nth-child(2) {
+            font-weight: 600;
+            color: black;
+          }
+        }
+
       }
 
     }
 
-
     .daysWeather {
       display: grid;
-      opacity: .5;
-      border: aqua 2px solid;
+      grid-template-columns: auto auto auto auto auto auto;
+      background: #009FFF;
+      padding: .8em 0;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      justify-content: space-around;
+
+      a {
+
+        text-decoration: none;
+        color: white;
+        font-size: 22px;
+
+      }
     }
   }
+
 }

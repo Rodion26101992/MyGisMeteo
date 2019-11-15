@@ -1,6 +1,7 @@
 @import '../../../assets/style/mixins';
 @import '../../../assets/style/variable';
 
+
 .navContainer {
   display: grid;
   grid-template-columns: 15% 60% 25%;
@@ -18,6 +19,7 @@
   a {
     text-decoration: none;
     color: $colorBlack;
+    font-weight: 600;
   }
 
   span {
